@@ -1,0 +1,25 @@
+import { defineChain } from 'viem'
+
+export const henesys = /*#__PURE__*/ defineChain({
+  id: 68414,
+  name: 'Henesys',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Nexpace',
+    symbol: 'NXPC'
+  },
+  rpcUrls: {
+    default: { http: ['https://henesys-rpc.msu.io'] },
+    public: { http: ['https://henesys-rpc.msu.io'] }
+  },
+  blockExplorers: {
+    default: {
+      name: 'MSU Explorer',
+      url: 'https://msu-explorer.xangle.io'
+    },
+    avalanche: {
+      name: 'Avalanche Explorer',
+      url: 'https://subnets.avax.network/henesys'
+    }
+  }
+})

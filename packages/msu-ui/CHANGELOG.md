@@ -1,4 +1,4 @@
-# @reown/appkit-ui
+# @reown/appkit-msu-ui
 
 ## 1.7.16
 

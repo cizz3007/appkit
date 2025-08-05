@@ -13,7 +13,7 @@ import type {
   W3mButton,
   W3mConnectButton,
   W3mNetworkButton
-} from '@reown/appkit-scaffold-ui'
+} from '@reown/appkit-msu-scaffold-ui'
 import { ProviderUtil } from '@reown/appkit-utils'
 
 import type {

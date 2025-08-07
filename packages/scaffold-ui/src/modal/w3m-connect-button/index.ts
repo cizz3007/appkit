@@ -5,8 +5,8 @@ import { ifDefined } from 'lit/directives/if-defined.js'
 import type { ChainNamespace } from '@reown/appkit-common'
 import { ModalController } from '@reown/appkit-controllers'
 import { customElement } from '@reown/appkit-msu-ui'
-import type { WuiConnectButton } from '@reown/appkit-msu-ui/wui-connect-button'
 import '@reown/appkit-msu-ui/wui-connect-button'
+import type { WuiConnectButton } from '@reown/appkit-ui/wui-connect-button'
 
 class W3mConnectButtonBase extends LitElement {
   // -- Members ------------------------------------------- //

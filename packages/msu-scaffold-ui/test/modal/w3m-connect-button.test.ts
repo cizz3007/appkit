@@ -4,17 +4,17 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { html } from 'lit'
 
 import { ModalController } from '@reown/appkit-controllers'
-import type { WuiConnectButton } from '@reown/appkit-ui/wui-connect-button'
+import type { MsuConnectButton } from '@reown/appkit-msu-ui/wui-connect-button'
 
-import { W3mConnectButton } from '../../src/modal/w3m-connect-button'
+import { MsuWalletConnectButton } from '../../src/modal/msu-connect-button'
 import { HelpersUtil } from '../utils/HelpersUtil'
 
 describe('W3mConnectButton', () => {
-  let element: W3mConnectButton
+  let element: MsuWalletConnectButton
   beforeEach(async () => {
     ModalController.close()
     ModalController.setLoading(false)
-    element = await fixture(html`<w3m-connect-button></w3m-connect-button>`)
+    element = await fixture(html`<msu-connect-button></msu-connect-button>`)
   })
 
   afterEach(() => {
@@ -31,14 +31,14 @@ describe('W3mConnectButton', () => {
     })
 
     it('renders with custom props', async () => {
-      const element: W3mConnectButton = await fixture(
+      const element: MsuWalletConnectButton = await fixture(
         html`<w3m-connect-button
           size="sm"
           label="Custom Connect"
           loadingLabel="Custom Loading..."
         ></w3m-connect-button>`
       )
-      const button = HelpersUtil.getByTestId(element, 'connect-button') as WuiConnectButton
+      const button = HelpersUtil.getByTestId(element, 'connect-button') as MsuConnectButton
       expect(button?.textContent?.trim()).toBe('Custom Connect')
       expect(button?.getAttribute('size')).toBe('sm')
 
@@ -59,7 +59,7 @@ describe('W3mConnectButton', () => {
       element.requestUpdate()
       await elementUpdated(element)
 
-      const button = HelpersUtil.getByTestId(element, 'connect-button') as WuiConnectButton
+      const button = HelpersUtil.getByTestId(element, 'connect-button') as MsuConnectButton
       expect(button?.textContent?.trim()).toBe('Connecting...')
       expect(button?.loading).toBe(true)
     })
@@ -69,7 +69,7 @@ describe('W3mConnectButton', () => {
       element.requestUpdate()
       await elementUpdated(element)
 
-      const button = HelpersUtil.getByTestId(element, 'connect-button') as WuiConnectButton
+      const button = HelpersUtil.getByTestId(element, 'connect-button') as MsuConnectButton
       expect(button?.textContent?.trim()).toBe('Connecting...')
       expect(button?.loading).toBe(true)
     })
@@ -77,7 +77,7 @@ describe('W3mConnectButton', () => {
 
   describe('Interactions', () => {
     it('opens modal on click when closed', async () => {
-      const button = HelpersUtil.getByTestId(element, 'connect-button') as WuiConnectButton
+      const button = HelpersUtil.getByTestId(element, 'connect-button') as MsuConnectButton
 
       button?.click()
       element.requestUpdate()

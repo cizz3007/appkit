@@ -23,7 +23,7 @@ export default function Home() {
       <h1 className="page-title">Next.js App Router Wagmi Example</h1>
 
       <div className="appkit-buttons-container">
-        <appkit-button />
+        <msu-wallet-connect-button size="12" label="Connect Wallet!!" />
         <appkit-network-button />
       </div>
 

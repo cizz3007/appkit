@@ -9,9 +9,9 @@ import type {
   AppKitButton,
   AppKitConnectButton,
   AppKitNetworkButton,
+  MsuWalletConnectButton,
   W3mAccountButton,
   W3mButton,
-  W3mConnectButton,
   W3mNetworkButton
 } from '@reown/appkit-msu-scaffold-ui'
 import { ProviderUtil } from '@reown/appkit-utils'
@@ -38,7 +38,7 @@ interface AppKitElements {
   'appkit-connect-button': Pick<AppKitConnectButton, 'size' | 'label' | 'loadingLabel'>
   'appkit-account-button': Pick<AppKitAccountButton, 'disabled' | 'balance'>
   'appkit-network-button': Pick<AppKitNetworkButton, 'disabled'>
-  'w3m-connect-button': Pick<W3mConnectButton, 'size' | 'label' | 'loadingLabel'>
+  'msu-wallet-connect-button': Pick<MsuWalletConnectButton, 'size' | 'label' | 'loadingLabel'>
   'w3m-account-button': Pick<W3mAccountButton, 'disabled' | 'balance'>
   'w3m-button': Pick<W3mButton, 'size' | 'label' | 'loadingLabel' | 'disabled' | 'balance'>
   'w3m-network-button': Pick<W3mNetworkButton, 'disabled'>

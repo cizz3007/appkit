@@ -9,12 +9,13 @@ import type { SizeType } from '../../utils/TypeUtil.js'
 import { customElement } from '../../utils/WebComponentsUtil.js'
 import styles from './styles.js'
 
-@customElement('wui-connect-button')
-export class WuiConnectButton extends LitElement {
+// Msu Connect Wallet button
+@customElement('msu-connect-button')
+export class MsuConnectButton extends LitElement {
   public static override styles = [resetStyles, elementStyles, styles]
 
   // -- State & Properties -------------------------------- //
-  @property() public size: Exclude<SizeType, 'inherit' | 'xl' | 'lg' | 'xs' | 'xxs'> | '12' = 'md'
+  @property() public size: Exclude<SizeType, 'inherit' | 'xl' | 'lg' | 'xs' | 'xxs'> | '12' = '12'
 
   @property({ type: Boolean }) public loading = false
 
@@ -46,6 +47,6 @@ export class WuiConnectButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'wui-connect-button': WuiConnectButton
+    'msu-connect-button': MsuConnectButton
   }
 }

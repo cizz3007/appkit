@@ -8,6 +8,7 @@ import type { WuiLoadingThumbnail } from '../components/wui-loading-thumbnail/in
 import type { WuiShimmer } from '../components/wui-shimmer/index.js'
 import type { WuiText } from '../components/wui-text/index.js'
 import type { WuiVisual } from '../components/wui-visual/index.js'
+import type { MsuConnectButton } from '../composites/msu-connect-button/index.js'
 import type { WuiAccountButton } from '../composites/wui-account-button/index.js'
 import type { WuiActiveProfileWalletItem } from '../composites/wui-active-profile-wallet-item/index.js'
 import type { WuiAlertBar } from '../composites/wui-alertbar/index.js'
@@ -23,7 +24,6 @@ import type { WuiCheckBox } from '../composites/wui-checkbox/index.js'
 import type { WuiChipButton } from '../composites/wui-chip-button/index.js'
 import type { WuiChip } from '../composites/wui-chip/index.js'
 import type { WuiCompatibleNetwork } from '../composites/wui-compatible-network/index.js'
-import type { WuiConnectButton } from '../composites/wui-connect-button/index.js'
 import type { WuiCtaButton } from '../composites/wui-cta-button/index.js'
 import type { WuiDetailsGroupItem } from '../composites/wui-details-group-item/index.js'
 import type { WuiDetailsGroup } from '../composites/wui-details-group/index.js'
@@ -95,6 +95,7 @@ interface AppKitElements {
   'wui-text': CustomElement<WuiText>
   'wui-visual': CustomElement<WuiVisual>
   // -- Composites ------------------------------------------- //
+  'msu-connect-button': CustomElement<MsuConnectButton>
   'wui-account-button': CustomElement<WuiAccountButton>
   'wui-all-wallets-image': CustomElement<WuiAllWalletsImage>
   'wui-avatar': CustomElement<WuiAvatar>
@@ -105,7 +106,6 @@ interface AppKitElements {
   'wui-chip-button': CustomElement<WuiChipButton>
   'wui-chip': CustomElement<WuiChip>
   'wui-compatible-network': CustomElement<WuiCompatibleNetwork>
-  'wui-connect-button': CustomElement<WuiConnectButton>
   'wui-cta-button': CustomElement<WuiCtaButton>
   'wui-details-group-item': CustomElement<WuiDetailsGroupItem>
   'wui-details-group': CustomElement<WuiDetailsGroup>

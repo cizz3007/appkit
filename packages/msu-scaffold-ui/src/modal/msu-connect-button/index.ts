@@ -5,15 +5,15 @@ import { ifDefined } from 'lit/directives/if-defined.js'
 import type { ChainNamespace } from '@reown/appkit-common'
 import { ModalController } from '@reown/appkit-controllers'
 import { customElement } from '@reown/appkit-msu-ui'
-import type { WuiConnectButton } from '@reown/appkit-msu-ui/wui-connect-button'
+import type { MsuConnectButton } from '@reown/appkit-msu-ui/wui-connect-button'
 import '@reown/appkit-msu-ui/wui-connect-button'
 
-class W3mConnectButtonBase extends LitElement {
+class MsuWalletConnectButtonBase extends LitElement {
   // -- Members ------------------------------------------- //
   private unsubscribe: (() => void)[] = []
 
   // -- State & Properties -------------------------------- //
-  @property() public size?: WuiConnectButton['size'] = 'md'
+  @property() public size?: MsuConnectButton['size'] = '12'
 
   @property() public label? = 'Connect Wallet'
 
@@ -45,14 +45,14 @@ class W3mConnectButtonBase extends LitElement {
   // -- Render -------------------------------------------- //
   public override render() {
     return html`
-      <wui-connect-button
+      <msu-connect-button
         size=${ifDefined(this.size)}
         .loading=${this.loading}
         @click=${this.onClick.bind(this)}
         data-testid=${`connect-button${this.namespace ? `-${this.namespace}` : ''}`}
       >
         ${this.loading ? this.loadingLabel : this.label}
-      </wui-connect-button>
+      </msu-connect-button>
     `
   }
 
@@ -66,15 +66,15 @@ class W3mConnectButtonBase extends LitElement {
   }
 }
 
-@customElement('w3m-connect-button')
-export class W3mConnectButton extends W3mConnectButtonBase {}
+@customElement('msu-wallet-connect-button')
+export class MsuWalletConnectButton extends MsuWalletConnectButtonBase {}
 
 @customElement('appkit-connect-button')
-export class AppKitConnectButton extends W3mConnectButtonBase {}
+export class AppKitConnectButton extends MsuWalletConnectButtonBase {}
 
 declare global {
   interface HTMLElementTagNameMap {
-    'w3m-connect-button': W3mConnectButton
+    'msu-wallet-connect-button': MsuWalletConnectButton
     'appkit-connect-button': AppKitConnectButton
   }
 }

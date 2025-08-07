@@ -6,8 +6,8 @@ import type { CaipAddress, ChainNamespace } from '@reown/appkit-common'
 import { ChainController } from '@reown/appkit-controllers'
 import { customElement } from '@reown/appkit-msu-ui'
 
+import type { MsuWalletConnectButton } from '../msu-connect-button/index.js'
 import type { W3mAccountButton } from '../w3m-account-button/index.js'
-import type { W3mConnectButton } from '../w3m-connect-button/index.js'
 import styles from './styles.js'
 
 class W3mButtonBase extends LitElement {
@@ -21,11 +21,11 @@ class W3mButtonBase extends LitElement {
 
   @property() public balance?: W3mAccountButton['balance'] = undefined
 
-  @property() public size?: W3mConnectButton['size'] = undefined
+  @property() public size?: MsuWalletConnectButton['size'] = undefined
 
-  @property() public label?: W3mConnectButton['label'] = undefined
+  @property() public label?: MsuWalletConnectButton['label'] = undefined
 
-  @property() public loadingLabel?: W3mConnectButton['loadingLabel'] = undefined
+  @property() public loadingLabel?: MsuWalletConnectButton['loadingLabel'] = undefined
 
   @property() public charsStart?: W3mAccountButton['charsStart'] = 4
 

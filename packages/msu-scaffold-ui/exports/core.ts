@@ -1,2 +1,2 @@
 // Core exports needed by all variants
-export * from '../src/modal/w3m-connect-button/index.js'
+export * from '../src/modal/msu-connect-button/index.js'

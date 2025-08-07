@@ -6,12 +6,19 @@ import {
   AppKitAccountButton as AppKitAccountButtonComponent,
   AppKitButton as AppKitButtonComponent,
   AppKitConnectButton as AppKitConnectButtonComponent,
-  AppKitNetworkButton as AppKitNetworkButtonComponent
-} from '@reown/appkit-scaffold-ui'
+  AppKitNetworkButton as AppKitNetworkButtonComponent,
+  MsuWalletConnectButton as MsuWalletConnectButtonComponent
+} from '@reown/appkit-msu-scaffold-ui'
 
 export const AppKitButton = createComponent({
   tagName: 'appkit-button',
   elementClass: AppKitButtonComponent,
+  react: React
+})
+
+export const MsuAppKitButton = createComponent({
+  tagName: 'msu-appkit-button',
+  elementClass: MsuWalletConnectButtonComponent,
   react: React
 })
 

@@ -5,7 +5,7 @@ import { ifDefined } from 'lit/directives/if-defined.js'
 import type { ChainNamespace } from '@reown/appkit-common'
 import { ModalController } from '@reown/appkit-controllers'
 import { customElement } from '@reown/appkit-msu-ui'
-import type { MsuConnectButton } from '@reown/appkit-msu-ui/wui-connect-button'
+import type { MsuConnectButton } from '@reown/appkit-msu-ui/msu-connect-button'
 import '@reown/appkit-msu-ui/wui-connect-button'
 
 class MsuWalletConnectButtonBase extends LitElement {

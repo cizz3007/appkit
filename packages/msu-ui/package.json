@@ -108,6 +108,11 @@
       "import": "./dist/esm/exports/wui-connect-button.js",
       "default": "./dist/esm/exports/wui-connect-button.js"
     },
+    "./msu-connect-button": {
+      "types": "./dist/types/exports/msu-connect-button.d.ts",
+      "import": "./dist/esm/exports/msu-connect-button.js",
+      "default": "./dist/esm/exports/msu-connect-button.js"
+    },
     "./wui-cta-button": {
       "types": "./dist/types/exports/wui-cta-button.d.ts",
       "import": "./dist/esm/exports/wui-cta-button.js",

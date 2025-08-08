@@ -11,6 +11,7 @@
   },
   "scripts": {
     "prebuild": "node scripts/inject-version.js",
+    "example:next-wagmi-app-router": "pnpm --filter @examples/next-wagmi-app-router dev",
     "build:clean": "turbo run build:clean --filter={./packages/*}",
     "build:sample-apps": "turbo run build --filter={./examples/*}",
     "build:example:wagmi-cdn": "pnpm build; pnpm --filter @examples/html-wagmi-cdn build",
@@ -25,7 +26,6 @@
     "laboratory": "pnpm --filter @apps/laboratory dev",
     "builder:dev": "pnpm --filter @apps/demo dev",
     "demo:dev": "pnpm --filter @apps/demo dev",
-    "example:next-wagmi-app-router": "pnpm --filter @examples/next-wagmi-app-router dev",
     "builder:build": "pnpm build; pnpm --filter @apps/demo build",
     "demo:build": "pnpm build; pnpm --filter @apps/demo build",
     "laboratory-new": "pnpm --filter @apps/laboratory-new dev",

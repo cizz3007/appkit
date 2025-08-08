@@ -2546,6 +2546,9 @@ importers:
         specifier: workspace:*
         version: link:../siwx
     devDependencies:
+      '@nexon-wallet/dapp-sdk-dev':
+        specifier: 1.2.2
+        version: 1.2.2
       '@reown/appkit-siwe':
         specifier: workspace:*
         version: link:../siwe
@@ -2859,9 +2862,6 @@ importers:
       '@reown/appkit-msu-ui':
         specifier: workspace:*
         version: link:../msu-ui
-      '@reown/appkit-ui':
-        specifier: workspace:*
-        version: link:../ui
       '@reown/appkit-utils':
         specifier: workspace:*
         version: link:../appkit-utils
@@ -5830,6 +5830,9 @@ packages:
     engines: {node: '>=18.14.0'}
     hasBin: true
 
+  '@nexon-wallet/dapp-sdk-dev@1.2.2':
+    resolution: {integrity: sha512-H4uUMLLiiBBF6V2veOrkFfB/g/IwyDcV8gDQJF5gvRDiXQJU3SOIzGa9w31VD1F/QMY/HtItBssQ98H4QjI86Q==}
+
   '@next/env@14.2.30':
     resolution: {integrity: sha512-KBiBKrDY6kxTQWGzKjQB7QirL3PiiOkV7KW98leHFjtVRKtft76Ra5qSA/SL75xT44dp6hOcqiiJ6iievLOYug==}
 
@@ -7591,6 +7594,10 @@ packages:
     resolution: {integrity: sha512-ROgqtQfpH/82AQIpESPqPQe0UyWywKJsmVIqi3c5Fh+zkds5LUxnssTj3yNd1x+kxaPDVB023jAP+3ibNgeNDw==}
     engines: {node: '>=14.18'}
 
+  '@sentry-internal/browser-utils@9.44.2':
+    resolution: {integrity: sha512-VvaSk8DDV8fsUZf+bnbjziyu4RJgSNAxZ4jFo5Jq7Z/SXc7uciOGElpEzgALcY0uMbFA/0IsXQKpB1s01ZsoZQ==}
+    engines: {node: '>=18'}
+
   '@sentry-internal/feedback@7.120.3':
     resolution: {integrity: sha512-ewJJIQ0mbsOX6jfiVFvqMjokxNtgP3dNwUv+4nenN+iJJPQsM6a0ocro3iscxwVdbkjw5hY3BUV2ICI5Q0UWoA==}
     engines: {node: '>=12'}
@@ -7598,6 +7605,10 @@ packages:
   '@sentry-internal/feedback@8.55.0':
     resolution: {integrity: sha512-cP3BD/Q6pquVQ+YL+rwCnorKuTXiS9KXW8HNKu4nmmBAyf7urjs+F6Hr1k9MXP5yQ8W3yK7jRWd09Yu6DHWOiw==}
     engines: {node: '>=14.18'}
+
+  '@sentry-internal/feedback@9.44.2':
+    resolution: {integrity: sha512-EVyTIc/V2p3aK2GwMk1/r192C8uxLipJXYB+nQCIqYTduuvdg9jCUFsK90FbRCbIqQtglcvVYmyNZwY4IaMxoQ==}
+    engines: {node: '>=18'}
 
   '@sentry-internal/replay-canvas@7.120.3':
     resolution: {integrity: sha512-s5xy+bVL1eDZchM6gmaOiXvTqpAsUfO7122DxVdEDMtwVq3e22bS2aiGa8CUgOiJkulZ+09q73nufM77kOmT/A==}
@@ -7607,9 +7618,17 @@ packages:
     resolution: {integrity: sha512-nIkfgRWk1091zHdu4NbocQsxZF1rv1f7bbp3tTIlZYbrH62XVZosx5iHAuZG0Zc48AETLE7K4AX9VGjvQj8i9w==}
     engines: {node: '>=14.18'}
 
+  '@sentry-internal/replay-canvas@9.44.2':
+    resolution: {integrity: sha512-49wOCuXz5qf507BW6UuGOFGSxCGke84rreglLRr+N/8n3Ag2GQC7zcxn25SwidVsWYQo70GxSqzAwZVrOCe6Vw==}
+    engines: {node: '>=18'}
+
   '@sentry-internal/replay@8.55.0':
     resolution: {integrity: sha512-roCDEGkORwolxBn8xAKedybY+Jlefq3xYmgN2fr3BTnsXjSYOPC7D1/mYqINBat99nDtvgFvNfRcZPiwwZ1hSw==}
     engines: {node: '>=14.18'}
+
+  '@sentry-internal/replay@9.44.2':
+    resolution: {integrity: sha512-LALsZg8n0F5OsOUELByXnCxPdovwl7eJja903fjamzC1MoWtTB06RXiZHqv/E1+HuTsseR2EggS0dLXfptximg==}
+    engines: {node: '>=18'}
 
   '@sentry-internal/tracing@7.120.3':
     resolution: {integrity: sha512-Ausx+Jw1pAMbIBHStoQ6ZqDZR60PsCByvHdw/jdH9AqPrNE9xlBSf9EwcycvmrzwyKspSLaB52grlje2cRIUMg==}
@@ -7626,6 +7645,10 @@ packages:
   '@sentry/browser@8.55.0':
     resolution: {integrity: sha512-1A31mCEWCjaMxJt6qGUK+aDnLDcK6AwLAZnqpSchNysGni1pSn1RWSmk9TBF8qyTds5FH8B31H480uxMPUJ7Cw==}
     engines: {node: '>=14.18'}
+
+  '@sentry/browser@9.44.2':
+    resolution: {integrity: sha512-m5oMprtmPTeZB9PFrQfWmRQglSgzozAUFUFiQdL0g2QJkmyNL4LzEE2L88dxGSbnABLRu0MI1ySiEQTFa7ZSbw==}
+    engines: {node: '>=18'}
 
   '@sentry/bundler-plugin-core@2.22.7':
     resolution: {integrity: sha512-ouQh5sqcB8vsJ8yTTe0rf+iaUkwmeUlGNFi35IkCFUQlWJ22qS6OfvNjOqFI19e6eGUXks0c/2ieFC4+9wJ+1g==}
@@ -7684,6 +7707,10 @@ packages:
   '@sentry/core@8.55.0':
     resolution: {integrity: sha512-6g7jpbefjHYs821Z+EBJ8r4Z7LT5h80YSWRJaylGS4nW5W5Z2KXzpdnyFarv37O7QjauzVC2E+PABmpkw5/JGA==}
     engines: {node: '>=14.18'}
+
+  '@sentry/core@9.44.2':
+    resolution: {integrity: sha512-4wduCY9vz+VRMZXTT1dzk08L2nReeR+lzpY8hCcc+Wu100BoJR+TNlrSn1rG5iIo98NDW860JsRA7SVDUDOiNQ==}
+    engines: {node: '>=18'}
 
   '@sentry/integrations@7.120.3':
     resolution: {integrity: sha512-6i/lYp0BubHPDTg91/uxHvNui427df9r17SsIEXa2eKDwQ9gW2qRx5IWgvnxs2GV/GfSbwcx4swUB3RfEWrXrQ==}
@@ -21449,6 +21476,11 @@ snapshots:
       - rollup
       - supports-color
 
+  '@nexon-wallet/dapp-sdk-dev@1.2.2':
+    dependencies:
+      '@sentry/browser': 9.44.2
+      events: 3.3.0
+
   '@next/env@14.2.30': {}
 
   '@next/env@15.3.5': {}
@@ -25211,6 +25243,10 @@ snapshots:
     dependencies:
       '@sentry/core': 8.55.0
 
+  '@sentry-internal/browser-utils@9.44.2':
+    dependencies:
+      '@sentry/core': 9.44.2
+
   '@sentry-internal/feedback@7.120.3':
     dependencies:
       '@sentry/core': 7.120.3
@@ -25220,6 +25256,10 @@ snapshots:
   '@sentry-internal/feedback@8.55.0':
     dependencies:
       '@sentry/core': 8.55.0
+
+  '@sentry-internal/feedback@9.44.2':
+    dependencies:
+      '@sentry/core': 9.44.2
 
   '@sentry-internal/replay-canvas@7.120.3':
     dependencies:
@@ -25233,10 +25273,20 @@ snapshots:
       '@sentry-internal/replay': 8.55.0
       '@sentry/core': 8.55.0
 
+  '@sentry-internal/replay-canvas@9.44.2':
+    dependencies:
+      '@sentry-internal/replay': 9.44.2
+      '@sentry/core': 9.44.2
+
   '@sentry-internal/replay@8.55.0':
     dependencies:
       '@sentry-internal/browser-utils': 8.55.0
       '@sentry/core': 8.55.0
+
+  '@sentry-internal/replay@9.44.2':
+    dependencies:
+      '@sentry-internal/browser-utils': 9.44.2
+      '@sentry/core': 9.44.2
 
   '@sentry-internal/tracing@7.120.3':
     dependencies:
@@ -25264,6 +25314,14 @@ snapshots:
       '@sentry-internal/replay': 8.55.0
       '@sentry-internal/replay-canvas': 8.55.0
       '@sentry/core': 8.55.0
+
+  '@sentry/browser@9.44.2':
+    dependencies:
+      '@sentry-internal/browser-utils': 9.44.2
+      '@sentry-internal/feedback': 9.44.2
+      '@sentry-internal/replay': 9.44.2
+      '@sentry-internal/replay-canvas': 9.44.2
+      '@sentry/core': 9.44.2
 
   '@sentry/bundler-plugin-core@2.22.7':
     dependencies:
@@ -25325,6 +25383,8 @@ snapshots:
       '@sentry/utils': 7.120.3
 
   '@sentry/core@8.55.0': {}
+
+  '@sentry/core@9.44.2': {}
 
   '@sentry/integrations@7.120.3':
     dependencies:

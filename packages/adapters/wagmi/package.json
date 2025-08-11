@@ -27,6 +27,7 @@
     "@reown/appkit-utils": "workspace:*",
     "@reown/appkit-wallet": "workspace:*",
     "@walletconnect/universal-provider": "2.21.7",
+    "@nexon-wallet/dapp-sdk-dev": "1.2.2",
     "valtio": "2.1.5"
   },
   "optionalDependencies": {

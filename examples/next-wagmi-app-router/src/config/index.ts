@@ -1,6 +1,4 @@
-import { WalletProviderApp } from '@nexon-wallet/dapp-sdk-dev'
-import { injected } from 'wagmi/connectors'
-
+import { MsuWalletConnector } from '@reown/appkit-adapter-wagmi'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 import {
   AppKitNetwork,
@@ -40,18 +38,7 @@ export const networks = [
 export const wagmiAdapter = new WagmiAdapter({
   networks,
   projectId,
-  connectors: [
-    injected({
-      target() {
-        return {
-          id: '111',
-          name: 'MSU Wallet',
-          provider: new WalletProviderApp(),
-          icon: 'https://d1ghfhy4m942vn.cloudfront.net/token_image/nxpc_token.png'
-        }
-      }
-    })
-  ]
+  connectors: [MsuWalletConnector()]
 })
 
 // Create modal

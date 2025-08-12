@@ -2441,8 +2441,8 @@ importers:
   packages/adapters/wagmi:
     dependencies:
       '@nexon-wallet/dapp-sdk-dev':
-        specifier: 1.2.2
-        version: 1.2.2
+        specifier: 1.1.9
+        version: 1.1.9
       '@reown/appkit':
         specifier: workspace:*
         version: link:../../appkit
@@ -5749,6 +5749,9 @@ packages:
     resolution: {integrity: sha512-zAr+8Tg80y/sUbhdUkZsq4Uy1IMzkSB6H/sKRMrDQ2NJx4uPgf5X5jMdg9g2FljNcxzpfJwc1Gg4OXQrjD0Z4A==}
     engines: {node: '>=18.14.0'}
     hasBin: true
+
+  '@nexon-wallet/dapp-sdk-dev@1.1.9':
+    resolution: {integrity: sha512-u/xV9qdDp0Oj3Ws5NsYrp1feBU17hO5WK4MXUP27VpeuIatBpOaI+6AzrMGwZ1T9ocPQzuyxQmmkUK906EBjkA==}
 
   '@nexon-wallet/dapp-sdk-dev@1.2.2':
     resolution: {integrity: sha512-H4uUMLLiiBBF6V2veOrkFfB/g/IwyDcV8gDQJF5gvRDiXQJU3SOIzGa9w31VD1F/QMY/HtItBssQ98H4QjI86Q==}
@@ -21408,6 +21411,11 @@ snapshots:
       - encoding
       - rollup
       - supports-color
+
+  '@nexon-wallet/dapp-sdk-dev@1.1.9':
+    dependencies:
+      '@sentry/browser': 9.45.0
+      events: 3.3.0
 
   '@nexon-wallet/dapp-sdk-dev@1.2.2':
     dependencies:

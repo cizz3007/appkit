@@ -18,7 +18,8 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "viem": "2.32.0",
-    "wagmi": "2.15.7"
+    "wagmi": "2.15.7",
+    "@nexon-wallet/dapp-sdk-dev": "1.2.2"
   },
   "devDependencies": {
     "@types/node": "22.13.4",

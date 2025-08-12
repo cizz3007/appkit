@@ -3,6 +3,13 @@ export * from 'viem/chains'
 export * from './solana/index.js'
 export * from './bitcoin.js'
 
+// -- Henesys ----------------------------------------------------------------
+export { henesys } from './henesys.js'
+export { henesysDev } from './henesys_dev.js'
+export { henesysQa } from './henesys_qa.js'
+export { henesysStage } from './henesys_stage.js'
+export { henesysTest } from './henesys_test.js'
+
 // -- Utils ------------------------------------------------------------------
 export * from './utils.js'
 

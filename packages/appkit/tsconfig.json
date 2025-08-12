@@ -3,7 +3,10 @@
     "composite": true,
     "outDir": "./dist/esm",
     "declarationDir": "./dist/types",
-    "removeComments": false
+    "removeComments": false,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ES2021"
   },
   "extends": "../../tsconfig.json",
   "include": ["exports", "src", "package.json", "tests"]
